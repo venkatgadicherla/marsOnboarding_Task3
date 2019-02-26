@@ -170,8 +170,8 @@ class TableData extends React.Component {
 
                 <tr key={key}>
                     <td>  <a href="#" >{product.Name}</a></td>
-                    <td>  <a href="#">{product.Price}</a></td>
-                    <td>  <EditButton productId={product.Id} productName={product.Name} productPrice={product.Price} setEdit_Method={this.props.setEditMethod}/></td>
+                    <td>  <a href="#"><i className="dollar icon">{product.Price} </i> </a></td>
+                    <td ><EditButton productId={product.Id} productName={product.Name} productPrice={product.Price} setEdit_Method={this.props.setEditMethod} /></td>
                     <td> <DeleteButton deleteProductId={product.Id} setDeleteId_Method={this.props.setDeleteIdMethod} /></td>
                 </tr>
 

@@ -1,0 +1,19 @@
+{
+  "name": "marsonboarding_task3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatgadicherla/marsOnboarding_Task3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkatgadicherla/marsOnboarding_Task3/issues"
+  },
+  "homepage": "https://github.com/venkatgadicherla/marsOnboarding_Task3#readme"
+}

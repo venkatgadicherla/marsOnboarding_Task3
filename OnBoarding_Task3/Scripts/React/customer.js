@@ -41,7 +41,16 @@ class Customers extends React.Component {
                 console.log(findresponse);
                 this.setState({ data: findresponse })
             })
+        //This code not working
+        //const request = async () => {
+        //    const response = await fetch('/Customer/GetCustomerList');
+        //    const json = await response.json();
+        //    console.log(json);
+        //}
+        //this.setState({ data: request() });
     }
+
+    
     render() {
         return (
 

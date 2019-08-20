@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import DeleteModal from './deletemodal';
 import CustomerEditModal from './customerEditModal';
+import Async from 'react-async';
 
 
 
@@ -35,19 +36,19 @@ class Customers extends React.Component {
 
     componentDidMount() {
 
-        fetch('/Customer/GetCustomerList').
-            then((Response) => Response.json()).
-            then((findresponse) => {
-                console.log(findresponse);
-                this.setState({ data: findresponse })
-            })
+        //fetch('/Customer/GetCustomerList').
+        //    then((Response) => Response.json()).
+        //    then((findresponse) => {
+        //        console.log(findresponse);
+        //        this.setState({ data: findresponse })
+        //    })
         //This code not working
-        //const request = async () => {
-        //    const response = await fetch('/Customer/GetCustomerList');
-        //    const json = await response.json();
-        //    console.log(json);
-        //}
-        //this.setState({ data: request() });
+        const request = async () => {
+            const response = await fetch('/Customer/GetCustomerList');
+            const json = await response.json();
+            console.log(json);
+        }
+        this.setState({ data: request() });
     }
 
     

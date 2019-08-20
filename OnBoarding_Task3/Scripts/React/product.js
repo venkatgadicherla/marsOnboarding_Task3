@@ -58,7 +58,7 @@ class Products extends React.Component {
                 <thead>
                     <tr >
                         <th>Name</th>
-                         <th><i className="dollar icon">Price     </th>
+                         <th><i className="dollar icon" />Price </th>
                          <th>Action(Edit)    </th>
                         <th>Action(Delete)    </th>
                     </tr>
